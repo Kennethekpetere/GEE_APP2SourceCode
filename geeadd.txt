@@ -1,0 +1,26 @@
+#########################################################################################################################
+############################################### Kenneth EKpetere #######################################################
+#########################################################################################################################
+
+# Install geeadd
+conda install -c conda-forge geeadd
+conda install -c conda-forge geeadd=1.0.1
+pip install geeadd
+
+# Export the code to a JavaScript file
+geeadd app2script --url "GEE_App_URL" --outfile "Full path to javascript.js"
+
+# Print out the Earth Engine code
+geeadd app2script --url "GEE_App_URL"
+
+#########################################################################################################################
+############################################### Examples of Usage #######################################################
+#########################################################################################################################
+ (1) NHI Tool for volcanoes
+https://nicogenzano.users.earthengine.app/view/nhi-tool
+geeadd app2script --url "https://nicogenzano.users.earthengine.app/view/nhi-tool" --outfile "NHI_Tool_for_volcanoes.js"
+geeadd app2script --url "https://nicogenzano.users.earthengine.app/view/nhi-tool" --outfile "C:\Users\kenne\OneDrive - University of Kansas\PROJECTS\GEE\NHI_Tool_for_volcanoes.js"
+
+ (2) Runoff Calculator
+https://jamesmcoll.users.earthengine.app/view/runoffcalculator
+geeadd app2script --url "https://jamesmcoll.users.earthengine.app/view/runoffcalculator" --outfile "C:\Users\kenne\OneDrive - University of Kansas\PROJECTS\GEE\RunOffCalculator.js"
